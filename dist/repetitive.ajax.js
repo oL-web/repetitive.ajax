@@ -7,7 +7,7 @@
 function ajax(options) {
 
     options = {
-        type: String(options.type).toUpperCase() || "GET",
+        type: options.type || "GET",
         url: options.url || "",
         timeout: options.timeout || 0,
         data: options.data || null,
@@ -44,7 +44,7 @@ function ajax(options) {
     request.onerror = options.onError;
     request.ontimeout = options.onTimeout;
 
-    if (options.type === "POST") {
+    if (String(options.type).toUpperCase() === "POST") {
         request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
     }
 
