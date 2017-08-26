@@ -19,7 +19,11 @@ export default {
                 ],
                 plugins: ['external-helpers']
             }),
-		uglify()
+		uglify({
+			mangle: {
+				reserved: ['options']
+				}
+		})
 	],
     dest: 'dist/' + packageJSON.name + '.min.js'
 };
