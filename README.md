@@ -23,14 +23,14 @@ Use in a browser:
 
 Self-explanatory:
 ```javascript
-	rptv.ajax({
+	ajax({
       url: "../package.json",
       onSuccess: function (resp) {
         console.log(resp.responseText);
       }
     });
     
-    rptv.ajax({
+    ajax({
       type: "GET",
       url: "../package.json",
       timeout: 6000,
