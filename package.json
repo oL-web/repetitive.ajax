@@ -1,6 +1,6 @@
 {
   "name": "repetitive.ajax",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Standalone ajax() function as a UMD module from the repetitive.js library. Sends an AJAX request.",
   "main": "dist/repetitive.ajax.min.js",
   "scripts": {
