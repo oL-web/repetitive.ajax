@@ -2,6 +2,10 @@
 
 ---
 
+## 0.1.1
+
+* Just a typo fix. Thanks, npm.
+
 ## 0.1.0
 
 * Removed "node.js support" from README to avoid confusion.
